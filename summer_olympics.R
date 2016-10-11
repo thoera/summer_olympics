@@ -117,7 +117,8 @@ highlight_plot <- function(country, color, base_size = 18, text_size = 20) {
 
 # Highlight the United States.
 annotation_1 <- paste0("In 1980, the US and 64 other nations\n",
-                       "boycotted the Summer Olympics")
+                       "boycotted the Summer Olympics\n",
+                       "which where celebrated in Moscow, Russia")
 annotation_2 <- paste0("The 1904 Summer Olympics were \n",
                        "celebrated in St. Louis, Missouri")
 annotation_3 <- paste0("The 1932 Summer Olympics were \n",
@@ -130,7 +131,7 @@ annotation_5 <- paste0("The 1996 Summer Olympics\n",
 gg <- highlight_plot(country = "United States", color = "#3333cc") +
   # 1980: Boycott.
   geom_vline(xintercept = 19, color = "grey50", linetype = "dashed") +
-  annotate("text", label = annotation_1, x = 16, y = 212, color = "grey50") +
+  annotate("text", label = annotation_1, x = 16, y = 215, color = "grey50") +
   # 1904: St. Louis.
   annotate("text", label = annotation_2, x = 5.8, y = 212, color = "grey50") +
   geom_segment(aes(x = 3.1, y = 238, xend = 5, yend = 221), 
@@ -153,13 +154,15 @@ ggplot_with_subtitle(gg, "The United States", fontsize = 18, col = "grey40")
 # dev.off()
 
 # Highlight Russia.
-annotation_1 <- "In 1984, the USSR and 15 other nations\n boycotted the Summer Olympics"
+annotation_1 <- paste0("In 1984, the USSR and 15 other nations\n",
+                       "boycotted the Summer Olympics\n",
+                       "which where celebrated in Los Angeles, California")
 annotation_2 <- "The 1980 Summer Olympics were \nheld in Moscow, Russia"
 
-gg <- highlight_plot(country = "Russia", color = "#ff0000")  +
+gg <- highlight_plot(country = "Russia", color = "#ff0000") +
   # 1984: Boycott.
   geom_vline(xintercept = 20, color = "grey50", linetype = "dashed") +
-  annotate("text", label = annotation_1, x = 23, y = 237, color = "grey50") +
+  annotate("text", label = annotation_1, x = 23.5, y = 225, color = "grey50") +
   # 1980: Moscow.
   annotate("text", label = annotation_2, x = 15, y = 212, color = "grey50") +
   geom_segment(aes(x = 18.9, y = 195, xend = 17.1, yend = 208),
@@ -170,9 +173,12 @@ ggplot_with_subtitle(gg, "Russia", fontsize = 18, col = "grey40")
 # dev.off()
 
 # Highlight GB.
-annotation_1 <- "The 1908 Summer Olympics were \nheld in London, United Kingdom"
-annotation_2 <- "The 1948 Summer Olympics were \ncelebrated in London, United Kingdom"
-annotation_3 <- "The 2012 Summer Olympics also \ntook place in London, United Kingdom"
+annotation_1 <- paste0("The 1908 Summer Olympics were\n",
+                       "held in London, United Kingdom")
+annotation_2 <- paste0("The 1948 Summer Olympics were\n",
+                       "celebrated in London, United Kingdom")
+annotation_3 <- paste0("The 2012 Summer Olympics also\n",
+                       "took place in London, United Kingdom")
 
 gg <- highlight_plot(country = "Great Britain", color = "#3333cc") +
   # 1908: London.
@@ -206,7 +212,9 @@ ggplot_with_subtitle(gg, "China", fontsize = 18, col = "grey40")
 # dev.off()
 
 # Highlight Romania.
-annotation_1 <- "The 1984 Summer Olympics were \nheld in Los Angeles, California and \nboycotted by the USSR and 15 other nations"
+annotation_1 <- paste0("The 1984 Summer Olympics were\n",
+                       "held in Los Angeles, California and\n",
+                       "boycotted by the USSR and 15 other nations")
 
 gg <- highlight_plot(country = "Romania", color = "#ffcc00") +
   # 1984: Boycott.
@@ -458,8 +466,32 @@ gridExtra::grid.arrange(gg1, gg2, ncol = 2)
 dt_us_growth_rate <- dt_total_long_per[.("United States"), .(year, medals)]
 dt_us_growth_rate[year != "total_1980", growth := medals / shift(medals) - 1]
 
+annotation_1 <- paste0("In 1980, the US and 64 other nations\n",
+                       "boycotted the Summer Olympics\n",
+                       "which where celebrated in Moscow, Russia")
+annotation_2 <- paste0("The Summer Olympics were held in the US\n",
+                       "in four occasions: 1904, 1932, 1984, and 1996")
+
+# pdf("./summer_olympics/plots/plot_us_growth_rate.pdf",
+#     width = 16, height = 9)
 gg <- ggplot(dt_us_growth_rate, aes(x = year, y = growth)) +
+  # 1980: Boycott.
+  geom_vline(xintercept = 19, color = "grey50", linetype = "dashed") +
+  annotate("text", label = annotation_1, x = 16, y = 3.5, color = "grey50") +
+  # 1904: St. Louis.
+  geom_segment(aes(x = 3.1, y = 3.85, xend = 11.5, yend = 1.7),
+               color = "grey70", linetype = "longdash", size = 0.25) +
   geom_line(color = "grey50", size = 0.8, group = 1, na.rm = TRUE) +
+  # 1932: Los Angeles.
+  geom_segment(aes(x = 9.1, y = 0.76, xend = 10.5, yend = 1.3), 
+               color = "grey70", linetype = "longdash", size = 0.25) +
+  # 1984: Los Angeles.
+  geom_segment(aes(x = 19.9, y = 0.65, xend = 16, yend = 1.5),
+               color = "grey70", linetype = "longdash", size = 0.25)  +
+  # 1996: Atlanta.
+  geom_segment(aes(x = 22.9, y = -0.09, xend = 14, yend = 1.3),
+               color = "grey70", linetype = "longdash", size = 0.25) +
+  annotate("text", label = annotation_2, x = 13, y = 1.5, color = "grey50") +
   geom_line(data = dt_us_growth_rate[year %in% c("total_1976", "total_1984"), ],
             aes(x = year, y = growth),
             color = "grey50", size = 0.8, group = 1, linetype = "dashed") +
@@ -467,12 +499,8 @@ gg <- ggplot(dt_us_growth_rate, aes(x = year, y = growth)) +
   scale_x_discrete(labels = years) +
   scale_y_continuous(breaks = seq(-1, 4, 1), limits = c(-1.5, 4.5), 
                      expand = c(0, 0)) +
-  # 1980: Boycott.
-  geom_vline(xintercept = 19, color = "grey50", linetype = "dashed") +
-  annotate("text", label = annotation_1, x = 16.5, y = 3.5, color = "grey50") +
   xlab("") + ylab("") +
-  ggtitle("Growth rate") +
+  ggtitle("Growth rate of the proportion of medals won") +
   theme_simple()
 ggplot_with_subtitle(gg, "The United States", fontsize = 18, col = "grey40")
-
-# 1904, 1932, 1984, 1996
+# dev.off()
