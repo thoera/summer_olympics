@@ -1,0 +1,283 @@
+continent;country
+Africa;Algeria
+Africa;Angola
+Africa;Benin
+Africa;Botswana
+Africa;Burkina Faso
+Africa;Burundi
+Africa;Cameroon
+Africa;Canary Islands
+Africa;Cape Verde
+Africa;Central African Republic
+Africa;Ceuta
+Africa;Chad
+Africa;Comoros
+Africa;Congo
+Africa;Democratic Republic of the Congo
+Africa;Djibouti
+Africa;Egypt
+Africa;Equatorial Guinea
+Africa;Eritrea
+Africa;Ethiopia
+Africa;Gabon
+Africa;Gambia
+Africa;Ghana
+Africa;Guinea
+Africa;Guinea-Bissau
+Africa;Ivory Coast
+Africa;Kenya
+Africa;Lesotho
+Africa;Liberia
+Africa;Libya
+Africa;Madagascar
+Africa;Madeira
+Africa;Malawi
+Africa;Mali
+Africa;Mauritania
+Africa;Mauritius
+Africa;Mayotte
+Africa;Melilla
+Africa;Morocco
+Africa;Mozambique
+Africa;Namibia
+Africa;Niger
+Africa;Nigeria
+Africa;Puntland
+Africa;Réunion
+Africa;Rwanda
+Africa;Sahrawi Arab Democratic Republic
+Africa;Saint Helena, Ascension and Tristan da Cunha
+Africa;São Tomé and Príncipe
+Africa;Senegal
+Africa;Seychelles
+Africa;Sierra Leone
+Africa;Socotra
+Africa;Somalia
+Africa;Somaliland
+Africa;South Africa
+Africa;South Sudan
+Africa;Sudan
+Africa;Swaziland
+Africa;Tanzania
+Africa;Togo
+Africa;Tunisia
+Africa;Uganda
+Africa;Zambia
+Africa;Zimbabwe
+Antarctica;Bouvet Island
+Antarctica;French Southern and Antarctic Lands
+Antarctica;Heard Island and McDonald Islands
+Antarctica;South Georgia and the South Sandwich Islands
+Asia;Abkhazia
+Asia;Afghanistan
+Asia;Akrotiri and Dhekelia
+Asia;Armenia
+Asia;Azerbaijan
+Asia;Bahrain
+Asia;Bangladesh
+Asia;Bhutan
+Asia;British Indian Ocean Territory
+Asia;Brunei
+Asia;Cambodia
+Asia;China
+Asia;Christmas Island
+Asia;Cocos (Keeling) Islands
+Asia;Cyprus
+Asia;East Timor
+Asia;Georgia
+Asia;Hong Kong
+Asia;India
+Asia;Indian Kashmir
+Asia;Indonesia
+Asia;Iran
+Asia;Iraq
+Asia;Iraqi Kurdistan
+Asia;Israel
+Asia;Japan
+Asia;Jordan
+Asia;Kazakhstan
+Asia;Kuwait
+Asia;Kyrgyzstan
+Asia;Laos
+Asia;Lebanon
+Asia;Macau
+Asia;Malaysia
+Asia;Maldives
+Asia;Mongolia
+Asia;Myanmar
+Asia;Nagorno-Karabakh
+Asia;Nepal
+Asia;Northern Cyprus
+Asia;North Korea
+Asia;Oman
+Asia;Pakistan
+Asia;Pakistani Kashmir
+Asia;Palestine
+Asia;Philippines
+Asia;Qatar
+Asia;Saudi Arabia
+Asia;Singapore
+Asia;South Korea
+Asia;South Ossetia
+Asia;Sri Lanka
+Asia;Syria
+Asia;Taiwan
+Asia;Tajikistan
+Asia;Thailand
+Asia;Tibet
+Asia;Turkey
+Asia;Turkmenistan
+Asia;United Arab Emirates
+Asia;Uzbekistan
+Asia;Vietnam
+Asia;Yemen
+Europe;Åland Islands
+Europe;Albania
+Europe;Andorra
+Europe;Austria
+Europe;Belarus
+Europe;Belgium
+Europe;Bosnia and Herzegovina
+Europe;Bulgaria
+Europe;Chechnya
+Europe;Croatia
+Europe;Czech Republic
+Europe;Denmark
+Europe;Estonia
+Europe;Faroe Islands
+Europe;Finland
+Europe;France
+Europe;Germany
+Europe;Gibraltar
+Europe;Greece
+Europe;Guernsey
+Europe;Hungary
+Europe;Iceland
+Europe;Ireland
+Europe;Isle of Man
+Europe;Italy
+Europe;Jan Mayen
+Europe;Jersey
+Europe;Kosovo
+Europe;Latvia
+Europe;Liechtenstein
+Europe;Lithuania
+Europe;Luxembourg
+Europe;Macedonia
+Europe;Malta
+Europe;Moldova
+Europe;Monaco
+Europe;Montenegro
+Europe;Netherlands
+Europe;Norway
+Europe;Poland
+Europe;Portugal
+Europe;Romania
+Europe;Russia
+Europe;San Marino
+Europe;Serbia
+Europe;Slovakia
+Europe;Slovenia
+Europe;Spain
+Europe;Svalbard
+Europe;Sweden
+Europe;Switzerland
+Europe;Transnistria
+Europe;Ukraine
+Europe;United Kingdom
+Europe;Vatican City
+North America;Anguilla
+North America;Antigua and Barbuda
+North America;Aruba
+North America;Bahamas
+North America;Barbados
+North America;Belize
+North America;Bermuda
+North America;Bonaire
+North America;British Virgin Islands
+North America;Canada
+North America;Cayman Islands
+North America;Clipperton Island
+North America;Costa Rica
+North America;Cuba
+North America;Curaçao
+North America;Dominica
+North America;Dominican Republic
+North America;El Salvador
+North America;Greenland
+North America;Grenada
+North America;Guadeloupe
+North America;Guatemala
+North America;Haiti
+North America;Honduras
+North America;Jamaica
+North America;Martinique
+North America;Mexico
+North America;Montserrat
+North America;Navassa Island
+North America;Nicaragua
+North America;Panama
+North America;Puerto Rico
+North America;Saba
+North America;Saint Barthélemy
+North America;Saint Kitts and Nevis
+North America;Saint Lucia
+North America;Saint Martin
+North America;Saint Pierre and Miquelon
+North America;Saint Vincent and the Grenadines
+North America;Sint Eustatius
+North America;Sint Maarten
+North America;Trinidad and Tobago
+North America;Turks and Caicos Islands
+North America;United States of America
+North America;United States Virgin Islands
+Oceania;American Samoa
+Oceania;Ashmore and Cartier Islands
+Oceania;Australia
+Oceania;Baker Island
+Oceania;Cook Islands
+Oceania;Coral Sea Islands
+Oceania;Fiji
+Oceania;French Polynesia
+Oceania;Guam
+Oceania;Howland Island
+Oceania;Jarvis Island
+Oceania;Johnston Atoll
+Oceania;Kingman Reef
+Oceania;Kiribati
+Oceania;Marshall Islands
+Oceania;Micronesia
+Oceania;Midway Atoll
+Oceania;Nauru
+Oceania;New Caledonia
+Oceania;New Zealand
+Oceania;Niue
+Oceania;Norfolk Island
+Oceania;Northern Mariana Islands
+Oceania;Palau
+Oceania;Palmyra Atoll
+Oceania;Papua New Guinea
+Oceania;Pitcairn Islands
+Oceania;Samoa
+Oceania;Solomon Islands
+Oceania;Tokelau
+Oceania;Tonga
+Oceania;Tuvalu
+Oceania;Vanuatu
+Oceania;Wake Island
+Oceania;Wallis and Futuna
+South America;Argentina
+South America;Bolivia
+South America;Brazil
+South America;Chile
+South America;Colombia
+South America;Ecuador
+South America;Falkland Islands
+South America;French Guiana
+South America;Guyana
+South America;Paraguay
+South America;Peru
+South America;South Georgia and the South Sandwich Islands
+South America;Suriname
+South America;Uruguay
+South America;Venezuela
