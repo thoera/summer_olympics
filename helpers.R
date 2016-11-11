@@ -21,7 +21,7 @@ theme_simple <- function(base_size = 18, text_size = 20) {
 
 # ggplot2 map theme.
 theme_map <- function(base_size = 18, text_size = 20) {
-  bg_color <- "#ffffff"
+  bg_color <- "#002266"  # Dark blue for the oceans.
   bg_rect <- element_rect(fill = bg_color, color = bg_color)
   
   theme_bw(base_size = base_size) +
@@ -39,7 +39,6 @@ theme_map <- function(base_size = 18, text_size = 20) {
 
 # A function to add a subtitle to a ggplot object.
 # Thanks to Bob Rudis for the function!
-
 ggplot_with_subtitle <- function(gg, label = "", fontfamily = NULL,
                                  fontsize = 10, hjust = 0, vjust = 0, 
                                  bottom_margin = 5.5, newpage = is.null(vp),
